@@ -1,5 +1,7 @@
 # Jämviktlära
 
+HEEEEJ 
+
 #### Frågeställning:
 
 Skriv ett program där du går in med Delta H, \Delta S, T och därmed får ut jämviktskonstanten.
