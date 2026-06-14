@@ -1,6 +1,7 @@
 # Jämviktlära
 
-HEEEEJ 
+HEEEEJ
+HALLLOOOOO!!!
 
 #### Frågeställning:
 
