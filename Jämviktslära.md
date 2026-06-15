@@ -1,7 +1,7 @@
 # Jämviktlära
 
 HEEEEJ
-HALLLOOOOO!!!
+HALLLOOOOO!!
 
 #### Frågeställning:
 
