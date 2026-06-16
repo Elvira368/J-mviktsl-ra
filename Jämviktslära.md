@@ -95,7 +95,7 @@ $ K=e^{-{(\Delta H - T\Delta S)} /(RT)} $
     # plot 1: K vs DH
     DS_constant = 100 
     K_vs_DH = np.exp(-(DH - T*DS_constant)/(R*T))
-    ax1.plot(DH/1000, np.log10(K_vs_DH))  # Convert DH to kJ/mol for x-axis
+    ax1.plot(DH/1000, np.log10(K_vs_DH))  # DH till kJ/mol
     ax1.set_xlabel('ΔH (kJ/mol)')
     ax1.set_ylabel('Log₁₀(K)')
     ax1.set_title(f'K vs ΔH (ΔS = {DS_constant} J/(mol·K))')
