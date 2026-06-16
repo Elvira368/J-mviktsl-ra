@@ -14,7 +14,7 @@ Programmet beräknar jämviktskonstanten K från ΔH, ΔS och temperaturen T, sa
 
 För att uttrycka sambandet mellan termodynamiska parametrar och jämviktskonstanten (K) används sambanden med Gibbs fria energi:
 
-$\Delta G = - RT $ $ln(K)$
+$\Delta G = - RT$ $ln(K)$
 
 där:
 - $\Delta G$ = Gibbs fria energi (J/mol),
@@ -28,7 +28,7 @@ där:
 - $\Delta H$ = entalpiförändring (J/mol)
 - $\Delta S$ = entropiförändring (J/(mol K))
 
-$ \iff $ $ K=e^{-{(\Delta H - T\Delta S)} /(RT)} $
+$\iff$ $K=e^{-{(\Delta H - T\Delta S)} /(RT)}$
 
 ### Hur entalpi och entropi påverkar jämviktskonstanten:
 
