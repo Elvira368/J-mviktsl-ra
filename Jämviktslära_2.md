@@ -20,7 +20,7 @@ där:
 - $\Delta G$ = Gibbs fria energi (J/mol),
 - $R$ = gaskonstanten (8,314 J/(mol K))
 - $T$ = temperatur (K),
-- $K$ = jämviktskonstanten (enhetslös).
+- $K$ = jämviktskonstanten
 
 $\Delta G = \Delta H - T \Delta S$
 
