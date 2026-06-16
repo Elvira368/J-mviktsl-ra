@@ -72,6 +72,8 @@ Man kanske kan göra någon matris eller någon kod som kan beräkna K värdet f
 Numpy, scipy eller pandas + Snygga figurer
 
 ## Teori
+Konstant temperatur.
+
 Van't Hoff equation: 
 
 $ K=e^{-{(\Delta H - T\Delta S)} /(RT)} $
