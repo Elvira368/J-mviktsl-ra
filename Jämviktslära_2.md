@@ -17,7 +17,7 @@ För att uttrycka sambandet mellan termodynamiska parametrar och jämviktskonsta
 $\Delta G = - RT $ $ln(K)$
 
 där:
-- $ \Delta G $ = Gibbs fria energi (J/mol),
+- $\Delta G$ = Gibbs fria energi (J/mol),
 - $R$ = gaskonstanten (8,314 J/(mol K))
 - $T$ = temperatur (K),
 - $K$ = jämviktskonstanten (enhetslös).
