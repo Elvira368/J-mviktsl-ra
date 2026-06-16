@@ -71,4 +71,68 @@ Man kanske kan göra någon matris eller någon kod som kan beräkna K värdet f
 
 Numpy, scipy eller pandas + Snygga figurer
 
+## Teori
+Van't Hoff equation: 
+
+$ K=e^{-{(\Delta H - T\Delta S)} /(RT)} $
+
+import matplotlib.pyplot as plt
+
+import numpy as np
+
+DH = np.linspace(-100000,100000,100) # J/mol
+DS = np.linspace(-300,300,100) # J/(mol* K)
+
+T = 298      # K
+R = 8.314    # J/(mol K)
+
+K = np.exp(-((DH-T*DS)/(R*T)))
+
+fig,(ax1, ax2) = plt.subplots(1, 2, figsize = (12,6))
+
+# plot 1: K vs DH
+DS_constant = 100 
+K_vs_DH = np.exp(-(DH - T*DS_constant)/(R*T))
+ax1.plot(DH/1000, np.log10(K_vs_DH))  # Convert DH to kJ/mol for x-axis
+ax1.set_xlabel('ΔH (kJ/mol)')
+ax1.set_ylabel('Log₁₀(K)')
+ax1.set_title(f'K vs ΔH (ΔS = {DS_constant} J/(mol·K))')
+ax1.grid(True)
+
+# plot 2: K vs DS
+DH_constant = -50000 # J/mol
+K_vs_DS = np.exp(-(DH_constant - T*DS)/(R*T))
+ax2.plot(DS, np.log10(K_vs_DS))
+ax2.set_xlabel('ΔS (J/(mol·K))')
+ax2.set_ylabel('Log₁₀(K)')
+ax2.set_title(f'K vs ΔS (ΔH = {DH_constant/1000} kJ/mol)')
+ax2.grid(True)
+
+plt.show()
+
+$K$ vs $\Delta H$ under konstant entropi ($\Delta S = 100$ J/(mol K)): Negativ $\Delta H \rightarrow$ högre $K$
+
+$K$ vs $\Delta S$ under konstant entalpi ($\Delta H = -50.0$ kJ/mol): Positiv $\Delta S \rightarrow$ högre $K$
+
+from ipywidgets import interact
+
+T = np.linspace(200,1000,100)
+
+def f(DH, DS):
+
+    logK = -(DH - T*DS)/(R*T*np.log(10))
+
+    plt.figure(figsize=(8,6))
+    plt.plot(T, logK)
+
+    plt.xlabel('Temperatur (K)')
+    plt.ylabel('Log₁₀(K)')
+    plt.title(
+        f'ΔH = {DH/1000:.1f} kJ/mol, ΔS = {DS} J/(mol·K)')
+
+    plt.grid(True)
+    plt.show()
+
+interact(f, DH=(-100000, 100000, 5000),DS=(-300, 300, 10))
+
 
