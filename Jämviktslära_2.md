@@ -4,9 +4,9 @@
 
 # Sammanfattande text:
 
-Programmet beräknar jämviktskonstanten K från ΔH, ΔS och temperaturen T, samt undersöker hur ΔH och ΔS ändras med temperaturen. 
+Projektet använde modeller för att beräkna jämviktskonstanten K utifrån ΔH, ΔS och temperaturen T, och undersöker hur entalpin och entropin påverkas av temperaturen. Detta omfattar visualiserande grafer (både statiska och interaktiva).
 
-
+Resultaten presenteras med, förutom grafer, även websidor och tabeller. Samt beräkningar och input genomförda med hjälp av bland annat numpy och pandas.
 
 
 # Jämviktskonstanten under konstant temperatur
