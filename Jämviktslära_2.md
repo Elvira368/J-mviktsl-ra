@@ -2,7 +2,7 @@
 
 
 
-# Sammanfattande text:
+# Sammanfattning
 
 Projektet använde modeller för att beräkna jämviktskonstanten K utifrån ΔH, ΔS och temperaturen T, och undersöker hur entalpin och entropin påverkas av temperaturen. Detta omfattar visualiserande grafer (både statiska och interaktiva).
 
