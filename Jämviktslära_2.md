@@ -55,7 +55,7 @@ K_vs_DH = np.exp(-(DH - T*DS_constant)/(R*T))
 ax1.plot(DH/1000, np.log10(K_vs_DH))  # DH till kJ/mol
 ax1.set_xlabel('ΔH (kJ/mol)')
 ax1.set_ylabel('Log₁₀(K)')
-ax1.set_title(f'K vs ΔH (ΔS = {DS_constant} J/(mol·K))')
+ax1.set_title(f'Log₁₀(K) vs ΔH (ΔS = {DS_constant} J/(mol·K))')
 ax1.grid(True)
     
 # plot 2: K vs DS
@@ -64,7 +64,7 @@ K_vs_DS = np.exp(-(DH_constant - T*DS)/(R*T))
 ax2.plot(DS, np.log10(K_vs_DS))
 ax2.set_xlabel('ΔS (J/(mol·K))')
 ax2.set_ylabel('Log₁₀(K)')
-ax2.set_title(f'K vs ΔS (ΔH = {DH_constant/1000} kJ/mol)')
+ax2.set_title(f'Log₁₀(K) vs ΔS (ΔH = {DH_constant/1000} kJ/mol)')
 ax2.grid(True)        
 
 plt.show()
